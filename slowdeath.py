@@ -30,7 +30,7 @@ def openConnections(url, threads, sleepTime) :
             sleep(1)
 
     except KeyboardInterrupt :
-        print "\nCaught keyboard interrupt. Stopping al threads"
+        print "\nCaught keyboard interrupt. Stopping all threads"
         for worker in pool :
             worker.stop()
 
