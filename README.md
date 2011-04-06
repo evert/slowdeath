@@ -1,23 +1,17 @@
-== Slowdeath ==
+slowdeath - a proof of concept low-traffic DOS script
 
-= Warning =
+WARNING
 
 This tool is for research purposes only, and should only be used as such.
 Use at your own risk. No warranty is provided.
 
-= License =
+LICENSE
 
 This tool is licensed under the MIT public license.
 
-= Description =
+EXAMPLE
 
-Slowdeath is a proof of concept tool to easily perform a denial of service 
-attack on webservers, in particular ones that have a limited number of clients
-available, such as Apache.
-
-To use:
-
-python slowdeath.py --threads 200 http://localhost/
+	python slowdeath.py --threads 200 http://localhost/
 
 The script will open 200 sockets to localhost, and perform a POST request. 
 The connection is kept alive, and will send out small tcp packages in the 
